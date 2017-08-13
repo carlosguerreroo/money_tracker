@@ -21,6 +21,12 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.6'
 end
 
+group :test do
+  gem 'shoulda-matchers',
+      git: 'https://github.com/thoughtbot/shoulda-matchers.git',
+      branch: 'rails-5'
+end
+
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'rubocop'
